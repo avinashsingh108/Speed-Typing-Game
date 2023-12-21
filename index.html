@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <header id="game-name">
+            <h1>
+                Speed Typing
+            </h1>
+        </header>
+
+    </div>
+    <div id="info">
+        <h2>
+            Welcome to our Speed Typing Game!
+        </h2>
+        <br>
+        <p>
+            Type the displayed word within the chosen time limit. <br>Select your difficulty level and race against the clock.
+        </p>
+    </div>
+    <div class="buttons">
+        <div id="btn-easy">
+            <button type="button" id="btn" onclick="startGame('easy')">Easy</button>
+        </div>
+        <div id="btn-medium">
+            <button type="button" id="btn" onclick="startGame('medium')">Medium</button>
+        </div>
+        <div id="btn-hard">
+            <button type="button" id="btn" onclick="startGame('hard')">Hard</button>
+        </div>
+    </div>
+    <div id="current-word">
+        <h3 id="current">Select level to play</h3>
+    </div>
+    <div id="user-input">
+        <input type="text" id="input" placeholder="Start Typing..." disabled><br>
+    </div>
+    <div id="result-1">
+        <h3 id="message"></h3>
+    </div>
+    <div class="result-2">
+        <div class="first">
+            <h4>
+                Time Left:<span id="time"></span>
+            </h4>
+        </div>
+        <div id="second">
+            <h4>
+                Score:<span id="score"></span>
+            </h4>
+        </div>
+    </div>
+    <div class="top-score">
+        <h4>
+            Highest Score
+        </h4>
+        <div>
+            <span id="hscore"></span>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="final-message">
+        <div id="gameover">
+            <h2>Game </h2>
+            <h2>Over</h2>
+            <p>Your Score:<span id="finalScore"></span></p><br>
+        </div>
+        <div id="restart">
+            <button type="button" id="restartBtn" onclick="restart()">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

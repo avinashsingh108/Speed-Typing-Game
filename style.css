@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100%;
+    background-color: rgb(55, 64, 132);
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+}
+.header
+{
+    background-color: rgb(37, 35, 97);
+    padding: 10px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#info
+{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#info p
+{
+    font-size: 18px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.buttons button{
+    padding: 3px 10px;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+#current-word{
+    height: 40px;
+    font-size: 18px;
+}
+#user-input input{
+    width: 450px;
+    padding: 8px;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 6px;
+}
+
+.result-2
+{
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    font-size: 18px;
+}
+.result-2 h4{
+    margin: 0px 100px;
+}
+.top-score{
+    background-color: rgb(84, 82, 208);
+    height: 80px;
+    width: 300px;
+    padding: 5px;
+    margin: 65px auto 0;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.top-score h4
+{
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+.overlay{
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(92, 92, 253, 0.6);
+    font-family: 'Courier New', Courier, monospace;
+}
+.final-message{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(53, 53, 150);
+    height: 256px;
+    width: 356px;
+    box-shadow: 5px 5px 20px 2px rgb(61, 59, 98);
+    border-radius: 10px;
+}
+.final-message h2{
+    font-size: 42px;
+}
+.final-message p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.final-message button{
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    
+.header
+{
+    font-size: 14px;
+}
+#info
+{
+    font-size: 15px;
+}
+#info p
+{
+    font-size: 16px;
+}
+.buttons button{
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+#current-word{
+    height: 35px;
+    font-size: 17px;
+}
+#user-input input{
+    width: 400px;
+    padding: 5px;
+    font-size: 16px;
+    height: 38px;
+    border-radius: 5px;
+}
+.top-score{
+    height: 70px;
+    width: 260px;
+    padding: 4px;
+}
+.final-message{
+    height: 236px;
+    width: 336px;
+}
+.final-message h2{
+    font-size: 38px;
+}
+.final-message p{
+    font-size: 14px;
+    margin-top: 8px;
+}
+.final-message button{
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.result-1, .result-2{
+    font-size: 17px;
+}
+.result-2 h4{
+    margin: 0px 65px;
+}
+  }
